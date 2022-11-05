@@ -38,5 +38,5 @@ def arithOp(request):
         "result": result,
         "operation_type": op_type
     }   
-    return Response(return_data, status=status.HTTP_202_ACCEPTED)
+    return Response(return_data, status=status.HTTP_200_OK)
 
