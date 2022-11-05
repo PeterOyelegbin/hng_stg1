@@ -33,12 +33,10 @@ def arithOp(request):
         result = x * y
     else:
         result = 'invalid operation type'
-    return_data = [
-        {
-            "slackUsername": "Peter Oyelegbin",
-            "result": result,
-            "operation_type": op_type
-        }   
-    ]
+    return_data = {
+        "slackUsername": "Peter Oyelegbin",
+        "result": result,
+        "operation_type": op_type
+    }   
     return Response(return_data, status=status.HTTP_202_ACCEPTED)
 
